@@ -17,9 +17,8 @@ class ToolsQATest(unittest.TestCase):
         self.driver.execute_script("window.scrollBy(0,1000)")
         self.driver.find_element_by_xpath("//*[@id='submit']").click()
         submit_text = self.driver.find_element_by_xpath("//div[@id='example-modal-sizes-title-lg']").text
-        self.driver.get_screenshot_as_file("Sheets/ToolsQA_form.png")
+        self.driver.get_screenshot_as_file("C:/Users/nikos/OneDrive/Υπολογιστής/BootCamps/Github/Python Unittest/files/SignIn.png")
         self.assertEqual("Thanks for submitting the form", submit_text)
-        self.driver.get_screenshot_as_file("files\screeshot.png")
 
     def tearDown(self):
         self.driver.close()
